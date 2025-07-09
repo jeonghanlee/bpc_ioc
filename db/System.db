@@ -1,0 +1,5 @@
+record(longin,"$(SYS)Unit:Selected-I"){
+  field(DTYP,"Soft Channel")
+  field(VAL,-1)
+  field(UDF,-1)
+}
