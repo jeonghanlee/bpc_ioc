@@ -171,6 +171,13 @@ menu(menuScan) {
     choice(menuScan_5_second, ".5 second")
     choice(menuScan_2_second, ".2 second")
     choice(menuScan_1_second, ".1 second")
+    choice(menuScan_21_second, ".21 second")
+    choice(menuScan_22_second, ".22 second")
+    choice(menuScan_23_second, ".23 second")
+    choice(menuScan_24_second, ".24 second")
+    choice(menuScan_25_second, ".25 second")
+    choice(menuScan_26_second, ".26 second")
+    choice(menuScan_27_second, ".27 second")
 }
 menu(menuSimm) {
     choice(menuSimmNO, "NO")

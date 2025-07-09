@@ -1,9 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2025-06-28 11:45:27 by diag-->
+<!--Saved on 2025-07-09 14:35:52 by diag-->
 <display version="2.0.0">
   <name>BPCstatus</name>
   <width>950</width>
   <height>850</height>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_80</name>
+    <x>642</x>
+    <y>10</y>
+    <width>88</width>
+    <height>48</height>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_81</name>
+    <x>551</x>
+    <y>10</y>
+    <width>88</width>
+    <height>48</height>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_82</name>
+    <x>460</x>
+    <y>10</y>
+    <width>88</width>
+    <height>48</height>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_83</name>
+    <x>369</x>
+    <y>10</y>
+    <width>88</width>
+    <height>48</height>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_79</name>
+    <x>278</x>
+    <y>10</y>
+    <width>88</width>
+    <height>48</height>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <transparent>true</transparent>
+  </widget>
   <widget type="rectangle" version="2.0.0">
     <name>Rectangle_78</name>
     <x>187</x>
@@ -3252,6 +3317,181 @@
     <rules>
       <rule name="BGcolor" prop_id="background_color" out_exp="false">
         <exp bool_exp="pv0==3">
+          <value>
+            <color red="255" green="180" blue="100">
+            </color>
+          </value>
+        </exp>
+        <pv_name>$(SYS)Unit:Selected-I</pv_name>
+      </rule>
+    </rules>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_4</name>
+    <actions execute_as_one="true">
+      <action type="open_display">
+        <file>BPCstatus.bob</file>
+        <macros>
+          <P>BPC{4}:</P>
+        </macros>
+        <target>replace</target>
+        <description>Open Display</description>
+      </action>
+      <action type="write_pv">
+        <pv_name>$(SYS)Unit:Selected-I</pv_name>
+        <value>4</value>
+        <description>WritePV</description>
+      </action>
+    </actions>
+    <text>BPC{4}:</text>
+    <x>282</x>
+    <y>14</y>
+    <width>80</width>
+    <height>40</height>
+    <rules>
+      <rule name="BGcolor" prop_id="background_color" out_exp="false">
+        <exp bool_exp="pv0==4">
+          <value>
+            <color red="255" green="180" blue="100">
+            </color>
+          </value>
+        </exp>
+        <pv_name>$(SYS)Unit:Selected-I</pv_name>
+      </rule>
+    </rules>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_5</name>
+    <actions execute_as_one="true">
+      <action type="open_display">
+        <file>BPCstatus.bob</file>
+        <macros>
+          <P>BPC{5}:</P>
+        </macros>
+        <target>replace</target>
+        <description>Open Display</description>
+      </action>
+      <action type="write_pv">
+        <pv_name>$(SYS)Unit:Selected-I</pv_name>
+        <value>5</value>
+        <description>WritePV</description>
+      </action>
+    </actions>
+    <text>BPC{5}:</text>
+    <x>373</x>
+    <y>14</y>
+    <width>80</width>
+    <height>40</height>
+    <rules>
+      <rule name="BGcolor" prop_id="background_color" out_exp="false">
+        <exp bool_exp="pv0==5">
+          <value>
+            <color red="255" green="180" blue="100">
+            </color>
+          </value>
+        </exp>
+        <pv_name>$(SYS)Unit:Selected-I</pv_name>
+      </rule>
+    </rules>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_6</name>
+    <actions execute_as_one="true">
+      <action type="open_display">
+        <file>BPCstatus.bob</file>
+        <macros>
+          <P>BPC{6}:</P>
+        </macros>
+        <target>replace</target>
+        <description>Open Display</description>
+      </action>
+      <action type="write_pv">
+        <pv_name>$(SYS)Unit:Selected-I</pv_name>
+        <value>6</value>
+        <description>WritePV</description>
+      </action>
+    </actions>
+    <text>BPC{6}:</text>
+    <x>464</x>
+    <y>14</y>
+    <width>80</width>
+    <height>40</height>
+    <rules>
+      <rule name="BGcolor" prop_id="background_color" out_exp="false">
+        <exp bool_exp="pv0==6">
+          <value>
+            <color red="255" green="180" blue="100">
+            </color>
+          </value>
+        </exp>
+        <pv_name>$(SYS)Unit:Selected-I</pv_name>
+      </rule>
+    </rules>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_7</name>
+    <actions execute_as_one="true">
+      <action type="open_display">
+        <file>BPCstatus.bob</file>
+        <macros>
+          <P>BPC{7}:</P>
+        </macros>
+        <target>replace</target>
+        <description>Open Display</description>
+      </action>
+      <action type="write_pv">
+        <pv_name>$(SYS)Unit:Selected-I</pv_name>
+        <value>7</value>
+        <description>WritePV</description>
+      </action>
+    </actions>
+    <text>BPC{7}:</text>
+    <x>555</x>
+    <y>14</y>
+    <width>80</width>
+    <height>40</height>
+    <rules>
+      <rule name="BGcolor" prop_id="background_color" out_exp="false">
+        <exp bool_exp="pv0==7">
+          <value>
+            <color red="255" green="180" blue="100">
+            </color>
+          </value>
+        </exp>
+        <pv_name>$(SYS)Unit:Selected-I</pv_name>
+      </rule>
+    </rules>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_8</name>
+    <actions execute_as_one="true">
+      <action type="open_display">
+        <file>BPCstatus.bob</file>
+        <macros>
+          <P>BPC{8}:</P>
+        </macros>
+        <target>replace</target>
+        <description>Open Display</description>
+      </action>
+      <action type="write_pv">
+        <pv_name>$(SYS)Unit:Selected-I</pv_name>
+        <value>8</value>
+        <description>WritePV</description>
+      </action>
+    </actions>
+    <text>BPC{8}:</text>
+    <x>646</x>
+    <y>14</y>
+    <width>80</width>
+    <height>40</height>
+    <rules>
+      <rule name="BGcolor" prop_id="background_color" out_exp="false">
+        <exp bool_exp="pv0==8">
           <value>
             <color red="255" green="180" blue="100">
             </color>
