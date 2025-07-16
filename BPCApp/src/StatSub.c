@@ -80,6 +80,7 @@ int getUDPloop(float *data, char *IPset){
         } else {
             perror("sendto failed");
         }
+        close(sockfd);
         return(4);
     }
     byteArrayToFloatArray(buffer, data, 60);
