@@ -1,0 +1,18 @@
+# Record set for a Bipolar Power Convertor (Power Supply)
+#
+# Macros:
+#  P      =
+#  SCAN   = SCAN field
+#
+
+global {P="$(PREFIX)"}
+
+# LEVEL0 : P, SCAN
+file "system_sys.template"
+{{}}
+
+file "status_scan.template"
+{{}}
+
+file "tester.template"
+{{}}

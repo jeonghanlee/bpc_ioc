@@ -1,0 +1,7 @@
+## BEGIN : system_sys.template
+record(longin, "$(SYS)Unit:Selected-I"){
+  field(DTYP, "Soft Channel")
+  field( VAL, -1)
+  field( UDF, -1)
+}
+## END : system_sys.template
