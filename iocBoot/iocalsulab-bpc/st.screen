@@ -1,0 +1,4 @@
+#!/bin/sh
+# cd "/vxboot/bpc/boot/iocBoot/iocalsulab-bpc"
+exec ./st.cmd
+
