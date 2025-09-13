@@ -211,21 +211,21 @@ record(ai,"$(P)Delta:PS1:Temp-I"){
   field(DTYP, "Soft Channel")
   field( VAL, -1)
   field( UDF, -1)
-  field( EGU, "degC")
+  field( EGU, "Celsius")
 }
 
 record(ai,"$(P)Delta:PS2:Temp-I"){
   field(DTYP, "Soft Channel")
   field( VAL, -1)
   field( UDF, -1)
-  field( EGU, "degC")
+  field( EGU, "Celsius")
 }
 
 record(ai,"$(P)Delta:PS3:Temp-I"){
   field(DTYP, "Soft Channel")
   field( VAL, -1)
   field( UDF, -1)
-  field( EGU, "degC")
+  field( EGU, "Celsius")
 }
 
 record(longin,"$(P)Delta:PS1:Fan1-I"){
@@ -268,21 +268,21 @@ record(ai,"$(P)Heatsink1:Temp-I"){
   field(DTYP, "Soft Channel")
   field( VAL, -1)
   field( UDF, -1)
-  field( EGU, "degC")
+  field( EGU, "Celsius")
 }
 
 record(ai,"$(P)Heatsink2:Temp-I"){
   field(DTYP, "Soft Channel")
   field( VAL, -1)
   field( UDF, -1)
-  field( EGU, "degC")
+  field( EGU, "Celsius")
 }
 
 record(ai,"$(P)Heatsink3:Temp-I"){
   field(DTYP, "Soft Channel")
   field( VAL, -1)
   field( UDF, -1)
-  field( EGU, "degC")
+  field( EGU, "Celsius")
 }
 
 record(longin,"$(P)Heatsink1:PWM-I"){
