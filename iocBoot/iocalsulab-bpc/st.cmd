@@ -71,6 +71,9 @@ cd "${TOP}/iocBoot/${IOC}"
 #--epicsEnvSet("PORT1_PORT", "xxxx")
 #--iocshLoad("$(IOCSH_LOCAL_TOP)/bpc.iocsh", "P=$(PRE),R=$(REC),DATABASE_TOP=$(DB_TOP),PORT=$(PORT1),IPADDR=$(PORT1_IP),IPPORT=$(PORT1_PORT)")
 
+dbLoadRecords("$(DB_TOP)/System.db","SYS=BPC:","user=diag")
+dbLoadRecords("$(DB_TOP)/Status20.db","P=BPC{1}:","user=diag")
+
 #>>>>>>>>>>>>>
 iocInit
 #>>>>>>>>>>>>>
@@ -81,6 +84,9 @@ iocInit
 ##
 # pvasr
 ClockTime_Report
+
+dbpf BPC{1}:IP:Settings-SP "192.168.0.35:5000"
+
 ##
 ##
 ##

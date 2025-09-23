@@ -201,6 +201,7 @@ Common_DBDs += qsrv.dbd
 endif
 endif
 
+bpc_DBD += BPCbnl.dbd
 bpc_DBD += BPCsubs.dbd
 
 bpc_SRCS += StatSub.c
